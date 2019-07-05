@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "snyk-jira-issue-creator": "./cli/index.js"
@@ -22,6 +24,8 @@
     "prompt-confirm": "^1.2.0",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5",
-    "uuid-validate": "0.0.2"
-  }
+    "uuid-validate": "0.0.2",
+    "snyk": "^1.192.0"
+  },
+  "snyk": true
 }
